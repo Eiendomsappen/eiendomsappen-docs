@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Leietakere · Eiendomsappen docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="**Leietakere** deles opp i to kategorier, _Leietaker-enheter_ og _Leietaker-brukere_. En [eiendom](landlord_properties) består av flere leietaker-enheter, der hver leietaker-enhet består av flere leietaker-brukere. Det er på leietaker-enhetene at all nøkkelinformasjonen knyttet til en leietaker ligger, som faste inntekter, utleid areal og organisasjonsnummer. Leietaker-brukere er brukere som gir leietakerne tilgang til å logge inn på Eiendomsappen for å se sine nøkkelinformasjon om leietaker-enheten, kontrakter, [melde inn avvik](landlord_deviations), [svare på rapporter](landlord_reports) og [sende meldinger i chatten](landlord_chat)."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Leietakere · Eiendomsappen docs"/><meta property="og:type" content="website"/><meta property="og:url" content="lunke.github.io/eiendomsappen-docs/"/><meta property="og:description" content="**Leietakere** deles opp i to kategorier, _Leietaker-enheter_ og _Leietaker-brukere_. En [eiendom](landlord_properties) består av flere leietaker-enheter, der hver leietaker-enhet består av flere leietaker-brukere. Det er på leietaker-enhetene at all nøkkelinformasjonen knyttet til en leietaker ligger, som faste inntekter, utleid areal og organisasjonsnummer. Leietaker-brukere er brukere som gir leietakerne tilgang til å logge inn på Eiendomsappen for å se sine nøkkelinformasjon om leietaker-enheten, kontrakter, [melde inn avvik](landlord_deviations), [svare på rapporter](landlord_reports) og [sende meldinger i chatten](landlord_chat)."/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/eiendomsappen-docs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script src="/eiendomsappen-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/eiendomsappen-docs/css/main.css"/><script src="/eiendomsappen-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/eiendomsappen-docs/"><img class="logo" src="/eiendomsappen-docs/img/favicon.ico" alt="Eiendomsappen docs"/><h2 class="headerTitleWithLogo">Eiendomsappen docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Utleier</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Velkommen<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/welcome">Kom i gang</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Utleier<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord/landlord_properties">Eiendommer</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/eiendomsappen-docs/docs/landlord/landlord_tenants">Leietakere</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord/landlord_deviations">Avvik</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord/landlord_reports">Rapporter</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord/landlord_chat">Chat</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord/landlord_settings">Innstillinger</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord/landlord_contractors">Leverandørgrupper</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Leietakere</h1></header><article><div><span><p><strong>Leietakere</strong> deles opp i to kategorier, <em>Leietaker-enheter</em> og <em>Leietaker-brukere</em>. En <a href="landlord_properties">eiendom</a> består av flere leietaker-enheter, der hver leietaker-enhet består av flere leietaker-brukere. Det er på leietaker-enhetene at all nøkkelinformasjonen knyttet til en leietaker ligger, som faste inntekter, utleid areal og organisasjonsnummer. Leietaker-brukere er brukere som gir leietakerne tilgang til å logge inn på Eiendomsappen for å se sine nøkkelinformasjon om leietaker-enheten, kontrakter, <a href="landlord_deviations">melde inn avvik</a>, <a href="landlord_reports">svare på rapporter</a> og <a href="landlord_chat">sende meldinger i chatten</a>.</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="opprette-leietaker-enheter"></a><a href="#opprette-leietaker-enheter" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Opprette leietaker-enheter</h2>
+<p>Før du kan legge til leietaker-brukere i en <a href="landlord_properties">eiendom</a>, må du opprette en leietaker-enher. En leietaker-enhet er ansvarlig for å samle leietakere som tilhører samme enhet, og det er på leietaker-enheten at man legger til informasjon som inntekter, kontrakter, utleid areal og organisasjonsnummer.</p>
+<blockquote>
+<p><strong>⚠️ Kun utleiere kan opprette leietaker-enheter</strong></p>
+</blockquote>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-10-tab-11" class="nav-link active" data-group="group_10" data-tab="tab-group-10-content-11">Mobil</div><div id="tab-group-10-tab-12" class="nav-link" data-group="group_10" data-tab="tab-group-10-content-12">Web</div></div><div class="tab-content"><div id="tab-group-10-content-11" class="tab-pane active" data-group="group_10" tabindex="-1"><div><span><ol>
+<li>Åpne Eiendomsappen og trykk på <img src="/eiendomsappen-docs/docs/assets/tab_properties.png" alt="Eiendommer">-ikonet nederst på skjermen</li>
+<li>Trykk på eiendommen du ønsker å legge til en leietaker-enhet i fra listen over dine eiendommer</li>
+<li>Bla ned til listen over leietakere og trykk på den blå <strong>+ Legg til</strong>-knappen til høyre for overskriften</li>
+<li>Fyll inn navnet på den nye leietaker-enheten</li>
+<li>Trykk på <strong>Opprett</strong></li>
+</ol>
+</span></div></div><div id="tab-group-10-content-12" class="tab-pane" data-group="group_10" tabindex="-1"><div><span><ol>
+<li>Logg inn på <a href="https://eiendomsappen.com/dashboard">Eiendomsappen.com</a> og velg <strong>Eiendommer</strong> i sidemenyen</li>
+<li>Trykk på eiendommen du ønsker å legge til en leietaker-enhet i fra listen over dine eiendommer</li>
+<li>Bla ned til listen over leietakere og trykk på <strong>Opprett en ny leietaker</strong></li>
+<li>Fyll inn navnet på den nye leietaker-enheten</li>
+<li>Trykk på <strong>Legg til en ny leietaker</strong></li>
+</ol>
+</span></div></div></div></div>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="endre-informasjon"></a><a href="#endre-informasjon" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Endre informasjon</h2>
+<p>En leietaker-enhet inneholder informasjon angående organisasjonsnummer, postadresse, type, utleid areal, kontrakt start- og sluttdato, samt mer. Følg stegene under for å se hvordan man legger inn og endrer denne informasjonen.</p>
+<blockquote>
+<p><strong>⚠️ Kun utleiere som er superbrukere kan endre informasjonen om leietaker-enheter</strong></p>
+</blockquote>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-13-tab-14" class="nav-link active" data-group="group_13" data-tab="tab-group-13-content-14">Mobil</div><div id="tab-group-13-tab-15" class="nav-link" data-group="group_13" data-tab="tab-group-13-content-15">Web</div></div><div class="tab-content"><div id="tab-group-13-content-14" class="tab-pane active" data-group="group_13" tabindex="-1"><div><span><ol>
+<li>Åpne Eiendomsappen og trykk på <img src="/eiendomsappen-docs/docs/assets/tab_properties.png" alt="Eiendommer">-ikonet nederst på skjermen</li>
+<li>Trykk på eiendommen som leietaker-enheten tilhører i listen over dine eiendommer</li>
+<li>Bla ned til listen over leietakere og trykk på leietaker-enheten du ønsker å administrere</li>
+<li>Trykk på <img src="/eiendomsappen-docs/docs/assets/gear.png" alt="Tannhjul">-ikonet øverst til høyre på siden</li>
+<li>Gjør endringene du ønsker</li>
+<li>Trykk på <strong>Lagre</strong> øverst til høyre på siden</li>
+</ol>
+</span></div></div><div id="tab-group-13-content-15" class="tab-pane" data-group="group_13" tabindex="-1"><div><span><ol>
+<li>Logg inn på <a href="https://eiendomsappen.com/dashboard">Eiendomsappen.com</a> og velg <strong>Eiendommer</strong> i sidemenyen</li>
+<li>Trykk på eiendommen som leietaker-enheten tilhører i listen over dine eiendommer</li>
+<li>Bla ned til listen over leietakere og trykk på leietaker-enheten du ønsker å administrere</li>
+<li>Trykk på <img src="/eiendomsappen-docs/docs/assets/edit.png" alt="Pennen">-ikonet i <strong>Nøkkeltall</strong>-seksjonen</li>
+<li>Gjør endringene på informasjonen du ønsker</li>
+<li>Trykk på <strong>Lagre informasjon</strong> nederst i seksjonen</li>
+</ol>
+</span></div></div></div></div>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="inntektsadministrasjon"></a><a href="#inntektsadministrasjon" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Inntektsadministrasjon</h2>
+<p>Inntektsadministrasjonen er ansvarlig for å samle alle de ulike faste inntektene man får fra en leietaker-enhet. Dette gjelder fast areal-leie, parkeringsleie og andre inntekter. Disse inntektene kan både være månedlige, årlige og kvartalsvis. Inntektene fra hver leietaker summeres opp til totale summer på <a href="landlord_properties">eiendommen</a>.</p>
+<blockquote>
+<p><strong>⚠️ Kun superbrukere kan gjøre inntekstadministrasjon</strong></p>
+</blockquote>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-16-tab-17" class="nav-link active" data-group="group_16" data-tab="tab-group-16-content-17">Mobil</div><div id="tab-group-16-tab-18" class="nav-link" data-group="group_16" data-tab="tab-group-16-content-18">Web</div></div><div class="tab-content"><div id="tab-group-16-content-17" class="tab-pane active" data-group="group_16" tabindex="-1"><div><span><ol>
+<li>Åpne Eiendomsappen og trykk på <img src="/eiendomsappen-docs/docs/assets/tab_properties.png" alt="Eiendommer">-ikonet nederst på skjermen</li>
+<li>Trykk på eiendommen som leietaker-enheten tilhører i listen over dine eiendommer</li>
+<li>Bla ned til listen over leietakere og trykk på leietaker-enheten du ønsker å administrere</li>
+<li>Trykk på <img src="/eiendomsappen-docs/docs/assets/gear.png" alt="Tannhjul">-ikonet øverst til høyre på siden</li>
+<li>Gjør endringene du ønsker</li>
+<li>Trykk på <strong>Lagre</strong> øverst til høyre på siden</li>
+<li>Bla nedover til du finner <strong>Inntekter</strong> og trykk på <strong>Administrer inntekter</strong></li>
+<li>Fyll inn summene for areal-leie, parkering og annet</li>
+<li>Velg perioden summene gjelder for</li>
+<li>Trykk på <strong>Lagre</strong> øverst til høyre på skjermen</li>
+</ol>
+</span></div></div><div id="tab-group-16-content-18" class="tab-pane" data-group="group_16" tabindex="-1"><div><span><ol>
+<li>Logg inn på <a href="https://eiendomsappen.com/dashboard">Eiendomsappen.com</a> og velg <strong>Eiendommer</strong> i sidemenyen</li>
+<li>Trykk på eiendommen som leietaker-enheten tilhører i listen over dine eiendommer</li>
+<li>Bla ned til listen over leietakere og trykk på leietaker-enheten du ønsker å administrere</li>
+<li>Trykk på <img src="/eiendomsappen-docs/docs/assets/gear.png" alt="Tannhjul">-ikonet øverst til høyre i <strong>Nøkkeltall</strong>-seksjonen</li>
+<li>Fyll inn summene for areal-leie, parkering og annet</li>
+<li>Velg perioden summene gjelder for</li>
+<li>Trykk på <strong>Lagre endringer</strong> nederst på popup-vinduet</li>
+</ol>
+</span></div></div></div></div>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="legge-til-kontakter"></a><a href="#legge-til-kontakter" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Legge til kontakter</h2>
+<p>Dersom du ønsker å ha leiekontrakter tilgjengelig på Eiendomsappen, er du nødt til å laste disse opp via web-plattformen vår. Kontraktene vil derimot også bli mulig å se via mobilen, uansett hvor du er.</p>
+<blockquote>
+<p><strong>⚠️ Kun utleiere som er superbrukere kan legge til leiekontrakter</strong></p>
+</blockquote>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-19-tab-20" class="nav-link active" data-group="group_19" data-tab="tab-group-19-content-20">Mobil</div><div id="tab-group-19-tab-21" class="nav-link" data-group="group_19" data-tab="tab-group-19-content-21">Web</div></div><div class="tab-content"><div id="tab-group-19-content-20" class="tab-pane active" data-group="group_19" tabindex="-1"><div><span><p><em>Å legge til kontrakter fra mobilen er ikke mulig å gjøre enda</em></p>
+</span></div></div><div id="tab-group-19-content-21" class="tab-pane" data-group="group_19" tabindex="-1"><div><span><ol>
+<li>Logg inn på <a href="https://eiendomsappen.com/dashboard">Eiendomsappen.com</a> og velg <strong>Eiendommer</strong> i sidemenyen</li>
+<li>Trykk på eiendommen som leietaker-enheten tilhører i listen over dine eiendommer</li>
+<li>Bla ned til listen over leietakere og trykk på enheten du ønsker å legge til en kontrakt til</li>
+<li>Bla ned til <strong>Filer</strong>-seksjonen på leietakeren</li>
+<li>Dra en fil til det blå feltet eller trykk på <strong>Trykk for å velge</strong> under kontraktene</li>
+</ol>
+</span></div></div></div></div>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="invitere-nye-leietaker-brukere"></a><a href="#invitere-nye-leietaker-brukere" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Invitere nye leietaker-brukere</h2>
+<p>For å legge til dine leietaker-brukere i en leietaker-enhet er det viktig å vite om personen allerede har en bruker på Eiendomsappen fra før av. Dersom personen ikke allerede er registrert på Eiendomsappen, følger du disse stegene. Hvis personen derimot allerede har en bruker, følger du heller veiledningen <em>Legge til eksisterende leietaker-brukere</em>.</p>
+<blockquote>
+<p><strong>⚠️ Kun utleiere og leietakere som er superbrukere kan legge til leietakere i en leietaker-enhet</strong></p>
+</blockquote>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-22-tab-23" class="nav-link active" data-group="group_22" data-tab="tab-group-22-content-23">Mobil</div><div id="tab-group-22-tab-24" class="nav-link" data-group="group_22" data-tab="tab-group-22-content-24">Web</div></div><div class="tab-content"><div id="tab-group-22-content-23" class="tab-pane active" data-group="group_22" tabindex="-1"><div><span><ol>
+<li>Åpne Eiendomsappen og trykk på <img src="/eiendomsappen-docs/docs/assets/tab_properties.png" alt="Eiendommer">-ikonet nederst på skjermen</li>
+<li>Trykk på eiendommen du ønsker å legge til personen til i listen over dine eiendommer</li>
+<li>Bla ned til listen over leietaker-enheter og trykk på den leietakeren du vil legge til personen i</li>
+<li>Bla ned til listen over medlemmer og trykk på den blå <strong>+ Legg til</strong>-knappen til høyre for overskriften</li>
+<li>Fyll inn e-postadressen til personen og trykk på <strong>Søk</strong></li>
+<li>Fyll inn navnet på personen</li>
+<li>Huk av om personen skal være en superbruker (frivillig)</li>
+<li>Huk av eiendommene personen skal være medlem av</li>
+<li>Trykk på <strong>Legg til</strong>. Personen vil da få tilsendt inloggingsdetaljer på e-postadressen du la inn.</li>
+</ol>
+</span></div></div><div id="tab-group-22-content-24" class="tab-pane" data-group="group_22" tabindex="-1"><div><span><ol>
+<li>Logg inn på <a href="https://eiendomsappen.com/dashboard">Eiendomsappen.com</a> og velg <strong>Eiendommer</strong> i sidemenyen</li>
+<li>Trykk på eiendommen du ønsker å legge til personen til i listen over dine eiendommer</li>
+<li>Bla ned til listen over medlemmer og trykk på <strong>Legg til et nytt medlem</strong>-knappen nederst</li>
+<li>Fyll inn e-postadressen til personen og trykk på <strong>Neste</strong></li>
+<li>Fyll inn navnet på personen</li>
+<li>Huk av om personen skal være en superbruker (frivillig)</li>
+<li>Huk av eiendommene personen skal være medlem av</li>
+<li>Trykk på <strong>Inviter medlem</strong>. Personen vil da få tilsendt inloggingsdetaljer på e-postadressen du la inn.</li>
+</ol>
+</span></div></div></div></div>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="legge-til-eksisterende-leietaker-brukere"></a><a href="#legge-til-eksisterende-leietaker-brukere" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Legge til eksisterende leietaker-brukere</h2>
+<p>For å legge til dine leietaker-brukere i en leietaker-enhet er det viktig å vite om personen allerede har en bruker på Eiendomsappen fra før av. Dersom personen allerede er registrert på Eiendomsappen, følger du disse stegene. Hvis personen derimot ikke har en bruker, følger du heller veiledningen <em>Invitere nye leietaker-brukere</em>.</p>
+<blockquote>
+<p><strong>⚠️ Kun utleiere og leietakere som er superbrukere kan legge til leietakere i en leietaker-enhet</strong></p>
+</blockquote>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-25-tab-26" class="nav-link active" data-group="group_25" data-tab="tab-group-25-content-26">Mobil</div><div id="tab-group-25-tab-27" class="nav-link" data-group="group_25" data-tab="tab-group-25-content-27">Web</div></div><div class="tab-content"><div id="tab-group-25-content-26" class="tab-pane active" data-group="group_25" tabindex="-1"><div><span><ol>
+<li>Åpne Eiendomsappen og trykk på <img src="/eiendomsappen-docs/docs/assets/tab_properties.png" alt="Eiendommer">-ikonet nederst på skjermen</li>
+<li>Trykk på eiendommen du ønsker å legge til personen til i listen over dine eiendommer</li>
+<li>Bla ned til listen over leietaker-enheter og trykk på den leietakeren du vil legge til personen i</li>
+<li>Bla ned til listen over medlemmer og trykk på den blå <strong>+ Legg til</strong>-knappen til høyre for overskriften</li>
+<li>Fyll inn e-postadressen til personen og trykk på <strong>Søk</strong></li>
+<li>Huk av om personen skal være en superbruker (frivillig)</li>
+<li>Huk av eiendommene personen skal være medlem av</li>
+<li>Trykk på <strong>Legg til</strong>. Personen vil da få tilsendt inloggingsdetaljer på e-postadressen du la inn.</li>
+</ol>
+</span></div></div><div id="tab-group-25-content-27" class="tab-pane" data-group="group_25" tabindex="-1"><div><span><ol>
+<li>Logg inn på <a href="https://eiendomsappen.com/dashboard">Eiendomsappen.com</a> og velg <strong>Eiendommer</strong> i sidemenyen</li>
+<li>Trykk på eiendommen du ønsker å legge til personen til i listen over dine eiendommer</li>
+<li>Bla ned til listen over medlemmer og trykk på <strong>Legg til et nytt medlem</strong>-knappen nederst</li>
+<li>Fyll inn e-postadressen til personen og trykk på <strong>Neste</strong></li>
+<li>Huk av om personen skal være en superbruker (frivillig)</li>
+<li>Huk av eiendommene personen skal være medlem av</li>
+<li>Trykk på <strong>Inviter medlem</strong>. Personen vil da få tilsendt inloggingsdetaljer på e-postadressen du la inn.</li>
+</ol>
+</span></div></div></div></div>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="administrere-leietaker-brukere"></a><a href="#administrere-leietaker-brukere" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Administrere leietaker-brukere</h2>
+<p>Avhengig av hva slags rettigheter og roller du har i de ulike <a href="landlord_properties">eiendommene</a>, vil du ha ulike muligheter for å administrere ulike brukere. I tabellen under ser du hvem som har mulighet til å utføre forskjellige handlinger på brukere. SB er superbruker.</p>
+<table>
+<thead>
+<tr><th style="text-align:left">Handling</th><th style="text-align:center">Utleier SB</th><th style="text-align:center">Utleier</th><th style="text-align:center">Leietaker SB</th><th style="text-align:center">Leietaker</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:left">Sende epost/ringe</td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center"><strong>Ja</strong></td></tr>
+<tr><td style="text-align:left">Sparke leietaker</td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center">Nei</td></tr>
+<tr><td style="text-align:left">Sparke utleier</td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center">Nei</td><td style="text-align:center">Nei</td></tr>
+<tr><td style="text-align:left">Gjøre til superbruker</td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center">Nei</td><td style="text-align:center">Nei</td><td style="text-align:center">Nei</td></tr>
+<tr><td style="text-align:left">Gjøre til driftsansvarlig</td><td style="text-align:center"><strong>Ja</strong></td><td style="text-align:center">Nei</td><td style="text-align:center">Nei</td><td style="text-align:center">Nei</td></tr>
+</tbody>
+</table>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-28-tab-29" class="nav-link active" data-group="group_28" data-tab="tab-group-28-content-29">Mobil</div><div id="tab-group-28-tab-30" class="nav-link" data-group="group_28" data-tab="tab-group-28-content-30">Web</div></div><div class="tab-content"><div id="tab-group-28-content-29" class="tab-pane active" data-group="group_28" tabindex="-1"><div><span><ol>
+<li>Åpne Eiendomsappen og trykk på <img src="/eiendomsappen-docs/docs/assets/gear.png" alt="Innstillinger">-ikonet nederst på skjermen</li>
+<li>Trykk på <strong>Administrer medlemmer</strong></li>
+<li>Trykk på brukeren du ønsker å administrere</li>
+<li>Trykk på eiendommen som brukeren er medlem av</li>
+<li>Trykk på handlingen du ønsker å utføre</li>
+</ol>
+</span></div></div><div id="tab-group-28-content-30" class="tab-pane" data-group="group_28" tabindex="-1"><div><span><ol>
+<li>Logg inn på <a href="https://eiendomsappen.com/dashboard">Eiendomsappen.com</a> og velg <strong>Eiendommer</strong> i sidemenyen</li>
+<li>Trykk på eiendommen som brukeren er medlem av i listen over dine eiendommer</li>
+<li>Bla ned til listen over medlemmer og trykk på <strong>Utleiere</strong> eller <strong>Leietakere</strong></li>
+<li>Trykk på <img src="/eiendomsappen-docs/docs/assets/gear.png" alt="Tannhjul">-ikonet øverst til høyre for brukeren</li>
+<li>Trykk på eiendommen som brukeren er medlem av i listen over dine eiendommer</li>
+<li>Trykk på handlingen du ønsker å utføre</li>
+</ol>
+</span></div></div></div></div>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="slette-leietaker-enheter"></a><a href="#slette-leietaker-enheter" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Slette leietaker-enheter</h2>
+<p>Dersom noen ikke lenger er en leietaker av deg, eller du av en annen grunn ikke ønsker en leietaker-enhet lenger på Eiendommen din, kan du slette enheten permanent. Dette vil fjerne all data du har lastet opp på enheten for godt.</p>
+<blockquote>
+<p><strong>⚠️ Kun superbrukere kan slette leietaker-enheter</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>⚠️ Denne handlingen kan ikke reverseres</strong></p>
+</blockquote>
+<div class="tabs"><div class="nav-tabs"><div id="tab-group-31-tab-32" class="nav-link active" data-group="group_31" data-tab="tab-group-31-content-32">Mobil</div><div id="tab-group-31-tab-33" class="nav-link" data-group="group_31" data-tab="tab-group-31-content-33">Web</div></div><div class="tab-content"><div id="tab-group-31-content-32" class="tab-pane active" data-group="group_31" tabindex="-1"><div><span><ol>
+<li>Åpne Eiendomsappen og trykk på <img src="/eiendomsappen-docs/docs/assets/tab_properties.png" alt="Eiendommer">-ikonet nederst på skjermen</li>
+<li>Trykk på eiendommen som leietaker-enheten tilhører i listen over dine eiendommer</li>
+<li>Bla ned til listen over leietakere og trykk på leietaker-enheten du ønsker å slette</li>
+<li>Trykk på <img src="/eiendomsappen-docs/docs/assets/gear.png" alt="Tannhjul">-ikonet øverst til høyre på siden</li>
+<li>Bla til bunn av siden og trykk på <strong>Slett leietaker-enhet</strong></li>
+<li>Bekreft handlingen ved å trykke på <strong>Slett</strong></li>
+</ol>
+</span></div></div><div id="tab-group-31-content-33" class="tab-pane" data-group="group_31" tabindex="-1"><div><span><ol>
+<li>Logg inn på <a href="https://eiendomsappen.com/dashboard">Eiendomsappen.com</a> og velg <strong>Eiendommer</strong> i sidemenyen</li>
+<li>Trykk på eiendommen som leietaker-enheten tilhører i listen over dine eiendommer</li>
+<li>Bla ned til listen over leietakere og trykk på leietaker-enheten du ønsker å administrere</li>
+<li>Bla til <strong>Administrator-innstillinger</strong>-seksjonen på bunnen av siden</li>
+<li>Trykk på <strong>Slett leietaker</strong></li>
+<li>Bekreft handlingen ved å trykke på <strong>Bekreft</strong></li>
+</ol>
+</span></div></div></div></div>
+<hr>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/eiendomsappen-docs/docs/landlord/landlord_properties"><span class="arrow-prev">← </span><span>Eiendommer</span></a><a class="docs-next button" href="/eiendomsappen-docs/docs/landlord/landlord_deviations"><span>Avvik</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#opprette-leietaker-enheter">Opprette leietaker-enheter</a></li><li><a href="#endre-informasjon">Endre informasjon</a></li><li><a href="#inntektsadministrasjon">Inntektsadministrasjon</a></li><li><a href="#legge-til-kontakter">Legge til kontakter</a></li><li><a href="#invitere-nye-leietaker-brukere">Invitere nye leietaker-brukere</a></li><li><a href="#legge-til-eksisterende-leietaker-brukere">Legge til eksisterende leietaker-brukere</a></li><li><a href="#administrere-leietaker-brukere">Administrere leietaker-brukere</a></li><li><a href="#slette-leietaker-enheter">Slette leietaker-enheter</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2020 Eiendomsappen AS</section></footer></div></body></html>
