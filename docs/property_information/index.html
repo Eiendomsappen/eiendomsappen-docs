@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Eiendomsinformasjon · Eiendomsappen guide</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="På Eiendomsappen har du mulighet til å legge inn mye forskjellig eiendomsinformasjon, enten generelt på bygget eller på en spesifikk leietaker."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Eiendomsinformasjon · Eiendomsappen guide"/><meta property="og:type" content="website"/><meta property="og:url" content="Lunke.github.io/eiendomsappen-docs/"/><meta property="og:description" content="På Eiendomsappen har du mulighet til å legge inn mye forskjellig eiendomsinformasjon, enten generelt på bygget eller på en spesifikk leietaker."/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/eiendomsappen-docs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script src="/eiendomsappen-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/eiendomsappen-docs/css/main.css"/><script src="/eiendomsappen-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/eiendomsappen-docs/"><img class="logo" src="/eiendomsappen-docs/img/logo.svg" alt="Eiendomsappen guide"/><h2 class="headerTitleWithLogo">Eiendomsappen guide</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Kom i gang</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Kom i gang<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/welcome">Velkommen</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/roles">Roller</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/eiendomsappen-docs/docs/property_information">Eiendomsinformasjon</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/property_actions">Handlinger</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">For utleier<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord_introduction">Introduksjon</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord_properties">Eiendommer</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord_tenants">Leietakere</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord_deviations">Avvik</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord_reports">Rapporter</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord_chat">Chat</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord_settings">Innstillinger</a></li><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/landlord_contractors">Leverandørgrupper</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">For leietaker<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/eiendomsappen-docs/docs/tenant_reports">Rapporter</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Eiendomsinformasjon</h1></header><article><div><span><p>På Eiendomsappen har du mulighet til å legge inn mye forskjellig eiendomsinformasjon, enten generelt på bygget eller på en spesifikk leietaker.</p>
+<blockquote>
+<p>Ønsker du å legge inn informasjon om bygget ditt som ikke er støttet av systemet enda? <a href="TODO">Ta gjerne kontakt med oss</a><br><br>
+For en oversikt over de ulike rollene og en beskrivelse av de, sjekk ut: <a href="roles">Roller</a></p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="generell-eiendomsinformasjon"></a><a href="#generell-eiendomsinformasjon" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Generell eiendomsinformasjon</h2>
+<p>Generell eiendomsinformasjon er informasjon som er knyttet til en eiendom, uten at den er unik for hver enkel leietaker-enhet. En oversikt over hva de ulike rollene på en eiendom kan se, finner du under.</p>
+<table>
+<thead>
+<tr><th style="text-align:left">Informasjon</th><th style="text-align:center">Utleier SB</th><th style="text-align:center">Utleier</th><th style="text-align:center">Leietaker SB</th><th style="text-align:center">Leietaker</th><th style="text-align:center">Entreprenør</th><th style="text-align:center">Regnes automatisk</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:left">Navn</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">By</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Gnr</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Bnr</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Snr</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Adresse</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Etasje(r)</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Notat</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Antall parkeringsplasser</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Utleide parkeringsplasser</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Ledige parkeringsplasser</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Tomteareal</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Totalt areal</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Utleid areal</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Total arealleie</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Total parkeringsleie</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Total annen leie</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Total årsleie</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Leie per m2</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Total kontraktsverdi</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Gjenstående kontraktsverdi</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Felleskostnad</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="leietakerinformasjon"></a><a href="#leietakerinformasjon" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Leietakerinformasjon</h2>
+<p>Leietakerinformasjon er informasjon som er knyttet til en enkel leietaker-enhet. Leietakere har ikke tilgang til noe leietakerinformasjon på andre leietaker-enheter. Se en oversikt over hvilke roller som kan se hva, under.</p>
+<table>
+<thead>
+<tr><th style="text-align:left">Informasjon</th><th style="text-align:center">Utleier SB</th><th style="text-align:center">Utleier</th><th style="text-align:center">Leietaker SB</th><th style="text-align:center">Leietaker</th><th style="text-align:center">Entreprenør</th><th style="text-align:center">Regnes automatisk</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:left">Type</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Organisasjonsnummer</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Postadresse</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Etasje(r)</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">MVA-pliktig</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Mottar EHF-faktura</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Notat</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Leide parkeringsplasser</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Areal</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Arealleie</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Parkeringsleie</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Annen leie</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Total årsleie</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Leie per m2</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Kontrakt startdato</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Kontrakt sluttdato</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr>
+<tr><td style="text-align:left">Kontraktsverdi</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+<tr><td style="text-align:left">Gjenstående kontraktsverdi</td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center">Ja</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">Ja</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/eiendomsappen-docs/docs/roles"><span class="arrow-prev">← </span><span>Roller</span></a><a class="docs-next button" href="/eiendomsappen-docs/docs/property_actions"><span>Handlinger</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#generell-eiendomsinformasjon">Generell eiendomsinformasjon</a></li><li><a href="#leietakerinformasjon">Leietakerinformasjon</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2020 Eiendomsappen AS</section></footer></div></body></html>
