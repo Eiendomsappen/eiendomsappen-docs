@@ -1,0 +1,105 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+ 
+/* your custom css */
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+    header a {
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
+
+blockquote {
+    margin: 30px 0;
+}
+
+
+iframe {
+    width: 100%;
+    height: 280px;
+    margin: 40px 0 !important;
+    max-width: 800px !important;
+    border-radius: 10px;
+    border: 1px solid #dfe2e5;
+}
+
+.fixedHeaderContainer {
+    background-color: white !important;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
+    padding: 20px 0;
+}
+
+.slidingNav a {
+    color: #31394D !important;
+    font-size: 20px !important;
+}
+.slidingNav a:hover {
+    color: #0D5BF1 !important;
+    background-color: white !important;
+    border-bottom: 2px solid #0D5BF1 !important;
+}
+
+.navigationSlider .slidingNav ul {
+    background: white !important;
+}
+
+.docsNavContainer {
+    border-right: 1px solid #DBDBDB;
+}
+
+.singleRowMobileNav.navPusher {
+    padding-top: 74px !important;
+}
+
+.fixedHeaderContainer h2 {
+    color: #31394D !important;
+}
+
+.tabs {
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+}
+.nav-tabs {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-link.active {
+    color: blue;
+}
+
+.tab-content {
+    padding-left: 10px;
+}
+.tab-content img {
+    height: 15px;
+}
+
+.onPageNav {
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .tocActive .singleRowMobileNav .onPageNav {
+        top: 130px;
+    }
+    .mainContainer .wrapper {
+        padding-top: 40px;
+    }
+}
