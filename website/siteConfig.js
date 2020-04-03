@@ -9,8 +9,9 @@
 const siteConfig = {
   title: 'Eiendomsappen guide',
   tagline: 'Guide til Eiendomsappen',
-  url: 'Lunke.github.io',
-  baseUrl: '/eiendomsappen-docs/',
+  url: 'https://guide.eiendomsappen.com',
+  baseUrl: '/',
+  cname:'guide.eiendomsappen.com',
  
   projectName: 'eiendomsappen-docs',
   organizationName: 'Lunke',
