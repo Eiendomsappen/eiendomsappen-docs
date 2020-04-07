@@ -1,7 +1,7 @@
 {
   "docs": {
     "Kom i gang": ["welcome", "roles", "property_information", "property_actions"],
-    "For utleier": ["landlord_introduction", "landlord_properties", "landlord_tenants", "landlord_deviations", "landlord_reports", "landlord_chat", "landlord_settings", "landlord_contractors"],
+    "For utleier": ["landlord_introduction", "landlord_properties", "landlord_tenants", "landlord_deviations", "landlord_reports", "landlord_chat", "landlord_incomeoverview", "landlord_contractors", "landlord_settings"],
     "For leietaker": ["tenant_introduction", "tenant_properties", "tenant_deviations", "tenant_reports", "tenant_chat", "tenant_settings"],
     "For leverandør": ["contractor_introduction", "contractor_contractors", "contractor_deviations", "contractor_chat", "contractor_settings"]
   }

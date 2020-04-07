@@ -33,14 +33,13 @@ const siteConfig = {
   blogSidebarCount: 'ALL',
   blogSidebarTitle: { default: 'Nylige artikler', all: 'Alle artikler' },
 
-
   copyright: `Copyright © ${new Date().getFullYear()} Eiendomsappen AS`,
 
   highlight: {
     theme: 'default',
   },
 
-  scripts: [], // 'https://buttons.github.io/buttons.js'
+  scripts: [],
 
   onPageNav: 'separate',
 
