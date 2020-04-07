@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Eiendomsappen guide Blog</title>
+        <link>https://guide.eiendomsappen.com/blog</link>
+        <description>The best place to stay up-to-date with the latest Eiendomsappen guide news and events.</description>
+        <lastBuildDate>Tue, 07 Apr 2020 06:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Eiendomsappen guide Blog</title>
+            <url>https://guide.eiendomsappen.com/img/logo.svg</url>
+            <link>https://guide.eiendomsappen.com/blog</link>
+        </image>
+        <copyright>Copyright © 2020 Eiendomsappen AS</copyright>
+        <item>
+            <title><![CDATA[Eiendomsforvaltning i krisetid]]></title>
+            <link>https://guide.eiendomsappen.com/blog/2020/04/07/Eiendomsforvaltning-i-krisetid.html</link>
+            <guid>https://guide.eiendomsappen.com/blog/2020/04/07/Eiendomsforvaltning-i-krisetid.html</guid>
+            <pubDate>Tue, 07 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Da vi for første gang begynte å skissere våre idéer om Eiendomsappen for snart to år siden var det med to mål for øyet. Det ene var å sikre fornøyde leietakere som føler seg sett og hørt. Det andre var å effektivisere driften på bygg rundt om i det ganske land (snart også det ganske Europa). <strong>Lite visste vi at vi også kom til å bli et verktøy som utleiere benytter for å håndtere en pandemi vi aldri kunne ha drømt om.</strong></p>
+]]></description>
+        </item>
+    </channel>
+</rss>
