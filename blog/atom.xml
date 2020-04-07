@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://guide.eiendomsappen.com/blog</id>
+    <id>https://lunke.github.io//blog</id>
     <title>Eiendomsappen guide Blog</title>
     <updated>2020-04-07T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://guide.eiendomsappen.com/blog"/>
+    <link rel="alternate" href="https://lunke.github.io//blog"/>
     <subtitle>The best place to stay up-to-date with the latest Eiendomsappen guide news and events.</subtitle>
-    <logo>https://guide.eiendomsappen.com/img/logo.svg</logo>
+    <logo>https://lunke.github.io//img/logo.svg</logo>
     <rights>Copyright © 2020 Eiendomsappen AS</rights>
     <entry>
         <title type="html"><![CDATA[Eiendomsforvaltning i krisetid]]></title>
-        <id>https://guide.eiendomsappen.com/blog/2020/04/07/Eiendomsforvaltning-i-krisetid.html</id>
-        <link href="https://guide.eiendomsappen.com/blog/2020/04/07/Eiendomsforvaltning-i-krisetid.html"/>
+        <id>https://lunke.github.io//blog/2020/04/07/Eiendomsforvaltning-i-krisetid.html</id>
+        <link href="https://lunke.github.io//blog/2020/04/07/Eiendomsforvaltning-i-krisetid.html"/>
         <updated>2020-04-07T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>Da vi for første gang begynte å skissere våre idéer om Eiendomsappen for snart to år siden var det med to mål for øyet. Det ene var å sikre fornøyde leietakere som føler seg sett og hørt. Det andre var å effektivisere driften på bygg rundt om i det ganske land (snart også det ganske Europa). <strong>Lite visste vi at vi også kom til å bli et verktøy som utleiere benytter for å håndtere en pandemi vi aldri kunne ha drømt om.</strong></p>
 ]]></summary>
