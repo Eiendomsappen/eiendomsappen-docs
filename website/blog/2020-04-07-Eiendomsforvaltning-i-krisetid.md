@@ -1,15 +1,14 @@
 ---
-title: Eiendomsappen i krisetid
+title: Eiendomsforvaltning i krisetid
 author: Ole Ekern
 authorURL: https://www.linkedin.com/in/olekern/
-authorFBID: 611217057
-authorTwitter: JoelMarcey
+authorImageURL: https://media-exp1.licdn.com/dms/image/C4D03AQE8kTrPfYy6hQ/profile-displayphoto-shrink_800_800/0?e=1591833600&v=beta&t=wtBcvZoAcsIsA5Rb-aakilek4luikKQdzf6SnQaTbbY
 ---
 
 
-<!--truncate-->
-
 Da vi for første gang begynte å skissere våre idéer om Eiendomsappen for snart to år siden var det med to mål for øyet. Det ene var å sikre fornøyde leietakere som føler seg sett og hørt. Det andre var å effektivisere driften på bygg rundt om i det ganske land (snart også det ganske Europa). **Lite visste vi at vi også kom til å bli et verktøy som utleiere benytter for å håndtere en pandemi vi aldri kunne ha drømt om.**
+
+<!--truncate-->
 
 
 ### Rapporter for å planlegge tiltak
@@ -27,6 +26,9 @@ Rapporterings-funksjonaliteten har nærmest fått en renessanse i disse dager og
 ### Oversikt over leieinntekter
 
 Ukene vi er i nå er vanskelige for mange leietakere, og utleiere rundt omkring i landet setter i gang tiltak for å redusere tyngden på skuldrene til sine leietakere. For mange betyr det reduserte leieinntekter i en periode, noe som kan bli uoversiktlig i lengden. **På Eiendomsappen lanserer vi nå derfor en leieoversikt** (vist under) slik at du som utleier enkelt kan holde oversikt over hva hver leietaker har betalt av leie hver måned og hva som er utestående.
+
+![Inntektsoversikt](assets/incomeOverview.png)
+
 
 ### Eiendomsappen - for en enklere hverdag
 

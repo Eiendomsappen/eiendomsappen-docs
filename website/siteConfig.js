@@ -5,7 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-
 const siteConfig = {
   title: 'Eiendomsappen guide',
   tagline: 'Guide til Eiendomsappen',
@@ -18,6 +17,7 @@ const siteConfig = {
   
   headerLinks: [
     { href: 'https://eiendomsappen.com', label: 'Hjem' },
+    { doc: 'welcome', label: 'Guide' },
     { blog: true, label: 'Blog' },
     { href: 'https://eiendomsappen.com/dashboard', label: 'Dashbord' }
   ],
@@ -29,6 +29,9 @@ const siteConfig = {
     primaryColor: '#0D5BF1',
     secondaryColor: '#602042',
   },
+
+  blogSidebarCount: 'ALL',
+  blogSidebarTitle: { default: 'Nylige artikler', all: 'Alle artikler' },
 
 
   copyright: `Copyright © ${new Date().getFullYear()} Eiendomsappen AS`,
@@ -42,6 +45,9 @@ const siteConfig = {
   onPageNav: 'separate',
 
   cleanUrl: true,
+  enableUpdateBy: true,
+  enableUpdateTime: true,
+  scrollToTop: true,
 
   docsSideNavCollapsible: true,
 };

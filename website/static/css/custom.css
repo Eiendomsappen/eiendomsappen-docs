@@ -30,6 +30,7 @@ blockquote {
 }
 
 
+
 iframe {
     width: 100%;
     height: 280px;
@@ -48,6 +49,10 @@ iframe {
 .slidingNav a {
     color: #31394D !important;
     font-size: 20px !important;
+}
+.siteNavGroupActive a {
+    color: #0D5BF1 !important;
+    background-color: white !important;
 }
 .slidingNav a:hover {
     color: #0D5BF1 !important;
