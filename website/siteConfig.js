@@ -18,6 +18,7 @@ const siteConfig = {
   
   headerLinks: [
     { href: 'https://eiendomsappen.com', label: 'Hjem' },
+    { blog: true, label: 'Blog' },
     { href: 'https://eiendomsappen.com/dashboard', label: 'Dashbord' }
   ],
 
