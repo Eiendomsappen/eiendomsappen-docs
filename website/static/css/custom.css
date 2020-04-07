@@ -108,3 +108,8 @@ iframe {
         padding-top: 40px;
     }
 }
+
+
+.blogContainer span p {
+    margin: 30px 0;
+}

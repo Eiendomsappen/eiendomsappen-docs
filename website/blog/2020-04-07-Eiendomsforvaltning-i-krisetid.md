@@ -14,10 +14,12 @@ Da vi for første gang begynte å skissere våre idéer om Eiendomsappen for sna
 ### Rapporter for å planlegge tiltak
 Det tok ikke mange dagene etter at landet var snudd på hodet før vi fikk vår første e-post fra en av våre brukere. **De ville så raskt og enkelt som mulig få en oversikt over situasjonen hver enkelt leietaker befinner seg i, og de ville diskutere hvordan de skulle gjøre det med vår rapporterings-funksjon.** Noen dager senere begynte svarene fra leietakerne å tikke inn, til stor hjelp for denne utleieren som skulle planlegge målrettede tiltak for å hjelpe de leietakerne som trenger det mest.
 
+[Les mer: Slik kommer du i gang med rapporter](./../../../../docs/landlord_reports.md)
+
 Under ser du et eksempel på hvordan en slik undersøkelse kan se ut, både fra utleieren og leietakerens perspektiv.
 
+### 
 ![rapporter](assets/reports.png)
-
 
 ### Avviksbehandling i krisetid
 
