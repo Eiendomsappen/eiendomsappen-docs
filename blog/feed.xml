@@ -4,7 +4,7 @@
         <title>Eiendomsappen Blog</title>
         <link>https://guide.eiendomsappen.com/blog</link>
         <description>The best place to stay up-to-date with the latest Eiendomsappen news and events.</description>
-        <lastBuildDate>Wed, 08 Apr 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Apr 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,14 @@
             <link>https://guide.eiendomsappen.com/blog</link>
         </image>
         <copyright>Copyright © 2020 Eiendomsappen AS</copyright>
+        <item>
+            <title><![CDATA[Hvordan komme i gang med underoppgaver 🚀]]></title>
+            <link>https://guide.eiendomsappen.com/blog/2020/04/20/Hvordan-komme-i-gang-med-underoppgaver.html</link>
+            <guid>https://guide.eiendomsappen.com/blog/2020/04/20/Hvordan-komme-i-gang-med-underoppgaver.html</guid>
+            <pubDate>Mon, 20 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Noen avvik vokser seg så store at flere forskjellige oppgaver må utføres for at avviket skal kunne lukkes, og for å løse det problemet, <strong>introduserer vi nå underoppgaver.</strong> Underoppgaver er det nyeste tillegget til Eiendomsappen og lar utleiere, leverandører og andre driftsansvarlige opprette oppgaver som gjør det lett å føre timer, velge hvem som er ansvarlig for utførelse, legge ved faktureringsinformasjon og annet. Underoppgaver kan også brukes som sjekklister for arbeid på bygg og i disse dager forbereder vi et system som skal kunne opprette slike periodiske lister, automatisk.</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Eiendomsforvaltning i krisetid]]></title>
             <link>https://guide.eiendomsappen.com/blog/2020/04/08/Eiendomsforvaltning-i-krisetid.html</link>
