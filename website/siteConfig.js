@@ -6,7 +6,7 @@
  */
 
 const siteConfig = {
-  title: 'Eiendomsappen guide',
+  title: 'Eiendomsappen',
   tagline: 'Guide til Eiendomsappen',
   url: 'https://guide.eiendomsappen.com',
   baseUrl: '/',

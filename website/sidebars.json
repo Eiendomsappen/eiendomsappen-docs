@@ -1,8 +1,63 @@
 {
   "docs": {
-    "Kom i gang": ["welcome", "roles", "property_information", "property_actions"],
-    "For utleier": ["landlord_introduction", "landlord_properties", "landlord_tenants", "landlord_deviations", "landlord_reports", "landlord_chat", "landlord_incomeoverview", "landlord_contractors", "landlord_settings"],
-    "For leietaker": ["tenant_introduction", "tenant_properties", "tenant_deviations", "tenant_reports", "tenant_chat", "tenant_settings"],
-    "For leverandør": ["contractor_introduction", "contractor_contractors", "contractor_deviations", "contractor_chat", "contractor_settings"]
+    "Kom i gang": [
+      "welcome",
+      "roles",
+      "property_information",
+      "property_actions"
+    ],
+    "For utleier": [
+      "landlord_introduction",
+      {
+        "type": "subcategory",
+        "label": "Eiendom",
+        "ids": [
+          "landlord_properties",
+          "landlord_tenants",
+          "landlord_incomeoverview"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Avvik",
+        "ids": [
+          "landlord_deviations",
+          "landlord_subtasks"
+        ]
+      },
+      "landlord_reports",
+      "landlord_chat",
+      "landlord_contractors",
+      "landlord_settings"
+    ],
+    "For leietaker": [
+      "tenant_introduction",
+      "tenant_properties",
+      {
+        "type": "subcategory",
+        "label": "Avvik",
+        "ids": [
+          "tenant_deviations",
+          "tenant_subtasks"
+        ]
+      },
+      "tenant_reports",
+      "tenant_chat",
+      "tenant_settings"
+    ],
+    "For leverandør": [
+      "contractor_introduction",
+      "contractor_contractors",
+      {
+        "type": "subcategory",
+        "label": "Avvik",
+        "ids": [
+          "contractor_deviations",
+          "contractor_subtasks"
+        ]
+      },
+      "contractor_chat",
+      "contractor_settings"
+    ]
   }
 }
