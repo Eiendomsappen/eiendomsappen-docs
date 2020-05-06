@@ -57,7 +57,6 @@ iframe {
 .slidingNav a:hover {
     color: #0D5BF1 !important;
     background-color: white !important;
-    border-bottom: 2px solid #0D5BF1 !important;
 }
 
 .navigationSlider .slidingNav ul {
@@ -109,7 +108,3 @@ iframe {
     }
 }
 
-
-.blogContainer img {
-    margin-top: 30px;
-}
