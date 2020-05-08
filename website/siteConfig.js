@@ -14,6 +14,8 @@ const siteConfig = {
  
   projectName: 'eiendomsappen-docs',
   organizationName: 'Lunke',
+
+  gaTrackingId: 'UA-154902497-1',
   
   headerLinks: [
     { href: 'https://eiendomsappen.com', label: 'Hjem' },
