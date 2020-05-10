@@ -108,3 +108,23 @@ iframe {
     }
 }
 
+
+
+
+/* SEARCH */
+#search_input_react {
+    background-color: white !important;
+    border: 2px solid #bcc1cb !important;
+    color: black !important;
+}
+#search_input_react::placeholder {
+    color: rgb(91, 99, 120);
+}
+.navSearchWrapper::after{
+    background: #bcc1cb !important;
+    width: 2px;
+}
+.navSearchWrapper::before{
+    border-color: #bcc1cb !important;
+    border-width: 2px;
+}

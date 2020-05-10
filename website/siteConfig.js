@@ -23,6 +23,13 @@ const siteConfig = {
     { href: 'https://app.eiendomsappen.com/', label: 'Dashbord' }
   ],
 
+  algolia: {
+    apiKey: '03e0dbccb90ebe131e6fb5dcfb60f590',
+    indexName: 'eiendomsappen_guide',
+    algoliaOptions: {},
+    placeholder: "Søk på guiden"
+  },
+
   headerIcon: 'img/logo.svg',
   favicon: 'img/favicon.ico',
 
