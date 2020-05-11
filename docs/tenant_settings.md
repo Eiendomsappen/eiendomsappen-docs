@@ -108,7 +108,7 @@ Eiendomsappen har støtte for både norsk og engelsk språk. Systemet vil automa
 ## Oppdatere push-varslinger
 Dersom du ønsker å velge bort visse varslinger, kan dette gjøres via innstillingene til brukeren din. Kategoriene du kan velge bort er _Nye avvik_, _Oppdateringer på avvik_, _Nye rapporter_, _Nye chatter_ og _Chat-meldinger_.
 
-> **⚠️ Ønsker du at man skal kunne velge bort flere push-varslinger? [Ta gjerne kontakt med oss for å tipse oss](https://eiendomsappen.com/no/#landing-contact).**
+> **⚠️ Ønsker du at man skal kunne velge bort flere push-varslinger? [Ta gjerne kontakt med oss for å tipse oss](https://eiendomsappen.com/nb/contact-us).**
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Mobil-->
@@ -131,7 +131,7 @@ Dersom du ønsker å velge bort visse varslinger, kan dette gjøres via innstill
 ## Oppdatere epost-varslinger
 Du har mulighet til å velge bort epost-varslinger som kommer når _nye avvik_ blir meldt inn. Følg stegene under for å se hvordan.
 
-> **⚠️ Ønsker du at man skal kunne velge bort flere epost-varslinger? [Ta gjerne kontakt med oss for å tipse oss](https://eiendomsappen.com/no/#landing-contact).**
+> **⚠️ Ønsker du at man skal kunne velge bort flere epost-varslinger? [Ta gjerne kontakt med oss for å tipse oss](https://eiendomsappen.com/nb/contact-us).**
 
 <!--DOCUSAURUS_CODE_TABS-->
 <!--Mobil-->

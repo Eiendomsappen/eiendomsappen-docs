@@ -5,7 +5,7 @@ title: Eiendomsinformasjon
 
 På Eiendomsappen har du mulighet til å legge inn mye forskjellig eiendomsinformasjon, enten generelt på bygget eller på en spesifikk leietaker.
 
-> Ønsker du å legge inn informasjon om bygget ditt som ikke er støttet av systemet enda? [Ta gjerne kontakt med oss](https://eiendomsappen.com/no/#landing-contact)<br><br>
+> Ønsker du å legge inn informasjon om bygget ditt som ikke er støttet av systemet enda? [Ta gjerne kontakt med oss](https://eiendomsappen.com/nb/contact-us)<br><br>
   For en oversikt over de ulike rollene og en beskrivelse av de, sjekk ut: [Roller](roles)
 
 

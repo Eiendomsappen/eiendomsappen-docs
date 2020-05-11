@@ -6,7 +6,7 @@ title: Handlinger
 På Eiendomsappen har de ulike rollene mulighet til å utføre forskjellige handlinger på eiendommen. På denne siden finner du en oversikt over de ulike handlingene og hvem som har tilgang til å utføre hva.
 
 
-> Finner du en handling som ikke er listet opp? [Ta gjerne kontakt med oss](https://eiendomsappen.com/no/#landing-contact)<br><br>
+> Finner du en handling som ikke er listet opp? [Ta gjerne kontakt med oss](https://eiendomsappen.com/nb/contact-us)<br><br>
   For en oversikt over de ulike rollene og en beskrivelse av de, sjekk ut: [Roller](roles)
 
 

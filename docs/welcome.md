@@ -8,7 +8,7 @@ Eiendomsappen ble utviklet med et mål: Å være bransjens mest intuitive forval
 
 Siden er delt opp i fire forskjellige deler, der den første, _Kom i gang_ forklarer konsepter som er relevante for alle roller, mens de tre andre: [_For utleier_](landlord_introduction), [_For leietaker_](tenant_introduction) og [_For leverandør_](contractor_introduction) har veiledninger rettet mot hver rolle.
 
-Dersom du ikke finner svaret på det du lurer på her, er det bare å [Ta kontakt](https://eiendomsappen.com/no/#landing-contact)
+Dersom du ikke finner svaret på det du lurer på her, er det bare å [Ta kontakt](https://eiendomsappen.com/nb/contact-us)
 
 ---
 
