@@ -58,6 +58,12 @@
       },
       "contractor_chat",
       "contractor_settings"
+    ],
+    "Integrasjoner": [
+      "integrations_unloc",
+      "integrations_airthings",
+      "integrations_disruptivetechnologies",
+      "integrations_hybel"
     ]
   }
 }

@@ -6,17 +6,17 @@
  */
 
 const siteConfig = {
-  title: 'Eiendomsappen',
+  title: 'Eiendomsappen Guide',
   tagline: 'Guide til Eiendomsappen',
   url: 'https://guide.eiendomsappen.com',
   baseUrl: '/',
-  cname:'guide.eiendomsappen.com',
- 
+  cname: 'guide.eiendomsappen.com',
+
   projectName: 'eiendomsappen-docs',
   organizationName: 'Lunke',
 
   gaTrackingId: 'UA-154902497-1',
-  
+
   headerLinks: [
     { href: 'https://eiendomsappen.com', label: 'Hjem' },
     { doc: 'welcome', label: 'Guide' },

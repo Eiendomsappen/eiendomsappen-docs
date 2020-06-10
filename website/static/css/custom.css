@@ -29,6 +29,16 @@ blockquote {
     margin: 30px 0;
 }
 
+table {
+    margin-top: 2em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+h3 {
+    margin-top: 3em;
+}
 
 
 iframe {
