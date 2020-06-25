@@ -3,7 +3,7 @@ id: landlord_contractors
 title: Leverandørgrupper
 ---
 
-En leverandørgruppe er en samling av én eller flere leverandører, som en utleier/driftsansvarlig kan delegere avvik til. Selve leverandørgruppen og det første medlemmet må opprettes/inviteres av en utleier, men de neste medlemmene kan inviteres av leverandøren. En leverandør er eksempelvis en vaktmester, rørlegger, elektriker eller snekker.
+En leverandørgruppe er en samling av én eller flere leverandører, som en utleier/driftsansvarlig kan delegere avvik til. Selve leverandørgruppen og det første medlemmet må opprettes/inviteres av en utleier, men de neste medlemmene kan inviteres av leverandøren. En leverandør er eksempelvis en vaktmester, rørlegger, elektriker eller snekker (enten som en enkeltperson eller selskap).
 
 ---
 
@@ -17,11 +17,8 @@ For at dine leverandører skal få tilgang til Eiendomsappen, må disse invitere
 1. Åpne Eiendomsappen og trykk på ![Innstillinger](assets/gear.png)-ikonet nederst på skjermen
 1. Trykk på **Leverandørgrupper** nederst på siden
 1. Trykk på ![+](assets/add_blue.png)-ikonet øverst til høyre på skjermen
-1. Fyll inn et navn på leverandørgruppen (frivillig)<br>
-    _Dersom du ikke fyller inn et navn vil det bli satt til navnet på leverandøren du inviterer_
-1. Trykk på **Trykk for å legge til bruker**-knappen under '_2. Administrator_'
-1. Følg stegene i vinduet for å legge til brukeren
-1. Trykk på **Trykk for å legge til eiendommer**-knappen under '_3. Velg eiendommer_' for å velge hvilke eiendommer leverandøren skal ha tilgang til<br>
+1. Fyll inn et navn på leverandørgruppen
+1. Trykk på **Trykk for å legge til eiendommer**-knappen under '_Velg eiendommer_' for å velge hvilke eiendommer leverandøren skal ha tilgang til<br>
     _NB. Leverandøren får ikke tilgang til noe annet enn generell informasjon som navn og adresse til eiendommene_
 1. Trykk på **Opprett leverandørgruppe**-knappen
 <!--Web-->
