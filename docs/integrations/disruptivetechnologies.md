@@ -1,5 +1,5 @@
 ---
-id: integrations_disruptivetechnologies
+id: disruptivetechnologies
 title: Disruptive Technologies
 ---
 

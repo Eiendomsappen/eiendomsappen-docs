@@ -1,5 +1,5 @@
 ---
-id: integrations_hybel
+id: hybel
 title: Hybel.no
 ---
 

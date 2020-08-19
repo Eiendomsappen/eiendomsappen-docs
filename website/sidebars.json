@@ -60,10 +60,16 @@
       "contractor_settings"
     ],
     "Integrasjoner": [
-      "integrations_unloc",
-      "integrations_airthings",
-      "integrations_disruptivetechnologies",
-      "integrations_hybel"
+      "integrations/unloc",
+      "integrations/airthings",
+      "integrations/disruptivetechnologies",
+      "integrations/hybel"
+    ],
+    "Roadmap": [
+      "roadmap"
+    ],
+    "API": [
+      "api/api_introduction"
     ]
   }
 }

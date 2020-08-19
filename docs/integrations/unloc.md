@@ -1,5 +1,5 @@
 ---
-id: integrations_unloc
+id: unloc
 title: Unloc
 ---
 

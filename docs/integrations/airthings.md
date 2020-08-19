@@ -1,5 +1,5 @@
 ---
-id: integrations_airthings
+id: airthings
 title: Airthings
 ---
 
