@@ -26,7 +26,7 @@ Roombooking er en ny modul av Eiendomsappen som gjør det mulig å dele byggene 
 
 ---
 
-## 18. september
+## 25. september
 
 ### ⚙️ Avvik - forbedringer
 
