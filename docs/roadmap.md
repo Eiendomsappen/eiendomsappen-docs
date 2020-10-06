@@ -26,7 +26,7 @@ Roombooking er en ny modul av Eiendomsappen som gjør det mulig å dele byggene 
 
 ---
 
-## 25. september
+## 1. oktober
 
 ### ⚙️ Avvik - forbedringer
 
@@ -39,7 +39,7 @@ Avvik har alltid vært vårt hovedfokus og snart vil man få mulighet til å:
 
 ---
 
-## 1. oktober
+## 9. oktober
 
 ### ↔️ API
 
@@ -53,10 +53,6 @@ Leverandører har vært en sentral del av Eiendomsappen siden dag én. Snart vil
 
 ## 14. oktober
 
-### 🏦 Selskap
-
-Selskap vil kunne administreres ytterligere på Eiendomsappen. Da vil man blant annet kunne sette egendefinerte varslingsinnstillinger og mye annet!
-
 ### 🗄 Avviksoversikt
 
 Et nytt dashbord gir deg en bedre oversikt over alle avvik, med flere muligheter for filtrering og sortering.
@@ -66,6 +62,10 @@ Et nytt dashbord gir deg en bedre oversikt over alle avvik, med flere muligheter
 ## Q4
 
 Eiendomsappen har flere store planer for resten av høsten. Under finner du noe av funksjonaliteten vi har planlagt og vil bli nærmere spesifisert de kommende månedene.
+
+### 🏦 Selskap
+
+Selskap vil kunne administreres ytterligere på Eiendomsappen. Da vil man blant annet kunne sette egendefinerte varslingsinnstillinger og mye annet!
 
 ### 📱 Mobilversjon 2.0
 
